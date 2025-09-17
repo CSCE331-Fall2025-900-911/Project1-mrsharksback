@@ -1,0 +1,286 @@
+@import url("style.css");
+
+img 
+{
+  filter: sepia(100%) saturate(200%) hue-rotate(10deg) brightness(95%);
+}
+
+html, body 
+{
+  background-color: #fff68f !important;
+  font-family: "Times New Roman", Georgia, serif;
+  color: #111;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 
+{
+  font-weight: 700;
+  letter-spacing: .2px;
+  text-transform: none;
+  color: #000;
+}
+
+.site-header 
+{
+  text-align: center;
+  border-bottom: 3px solid #000;
+  padding-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-footer 
+{
+  text-align: center;
+  border-top: 3px solid #000;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  font-weight: 700;
+}
+
+.stage 
+{
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.arcade-image, img[usemap] 
+{
+  border: 2px solid #000;
+  background: #fff;
+  padding: 4px;
+  box-shadow: 2px 2px 0 #000;
+}
+
+a 
+{ 
+  color: #000; 
+  text-decoration: underline; 
+}
+
+a:hover 
+{ 
+  text-decoration: none; 
+}
+
+.btn {
+  background: #000;
+  color: #fff !important;
+  border-radius: 0;
+  padding: .4rem .75rem;
+  text-transform: none;
+  box-shadow: none;
+}
+.btn:hover 
+{ 
+  opacity: .85; 
+}
+
+.note, .panel, .arcade-machine .side-text 
+{
+  color: #111;
+}
+
+
+.arcade-image, .arcade-machine, .panel, .note 
+{
+  box-shadow: none;
+}
+
+/* Portfolio page */
+
+.arcade-machine 
+{
+  background: #fffacd;
+  border: 2px solid #000;
+  padding: 1rem;
+  width: 240px;
+  margin: 1rem auto;
+  text-align: center;
+  background-image: none;
+}
+
+.arcade-machine .title, .arcade-machine .screen, .arcade-machine .side-text, .arcade-machine .controls 
+{
+  position: static !important;
+  left: auto; right: auto; top: auto; bottom: auto;
+  width: auto; height: auto;
+  margin: 0.4rem 0;
+  text-align: center;
+}
+
+.arcade-machine h2, .arcade-machine h2 a 
+{
+  color: #000 !important;
+  text-decoration: none !important;
+  margin: 0.25rem 0;
+  font-size: 1.2rem;
+}
+
+.arcade-machine .screen img 
+{
+  display: block;
+  width: 120px;
+  height: auto;
+  margin: 0.4rem auto;
+  border: 1px solid #000;
+  filter: sepia(100%) saturate(200%) hue-rotate(10deg) brightness(95%);
+}
+
+.arcade-machine p 
+{
+  margin: 0.4rem 0;
+  color: #111;
+}
+
+.arcade-machine .btn 
+{
+  display: inline-block;
+  background: #000;
+  color: #fff !important;
+  padding: 0.4rem 0.8rem;
+  text-decoration: none;
+}
+
+/* Services */
+
+.bulletin-body 
+{
+  background: #fff68f;
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: "Times New Roman", Georgia, serif;
+  color: #111;
+}
+
+.bulletin-board 
+{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.note 
+{
+  background: #fffacd; 
+  border: 2px solid #000;
+  padding: 1rem;
+  width: 240px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.note::before 
+{
+  content: none !important;
+}
+
+.note p 
+{
+  margin: 0.5rem 0;
+  color: #111;
+}
+.note a 
+{
+  color: #000 !important;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.note a:hover 
+{
+  text-decoration: none;
+}
+
+/* Qualifications page */
+
+body 
+{
+  background: #fff68f;
+  font-family: "Times New Roman", Georgia, serif;
+  color: #111;
+  line-height: 1.6;
+  text-align: center;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+h1 
+{
+  color: #000;
+  font-size: 2rem;
+  font-weight: bold;
+  border-bottom: 3px solid #000;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.employee-photo 
+{
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border: 2px solid #000;
+  display: block;
+  margin: 0 auto 1rem;
+  filter: sepia(100%) saturate(200%) hue-rotate(10deg) brightness(95%);
+}
+
+.employee-name 
+{
+  color: #000;
+  font-size: 1.4rem;
+  font-weight: bold;
+  border-bottom: 2px solid #000;
+  display: inline-block;
+  padding-bottom: 0.25rem;
+  margin: 0.5rem 0 1rem;
+}
+
+.employee-info 
+{
+  max-width: 60ch;
+  margin: 0 auto 1rem;
+  color: #111;
+  line-height: 1.5;
+}
+
+a 
+{
+  color: #000;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+a:hover 
+{
+  text-decoration: none;
+}
+
+/* Background extra stuff */
+
+body.billboard, body.billboard-page 
+{
+  background-color: #fff68f !important;
+}
+
+body.plants, body.plant-page 
+{
+  background-color: #fff68f !important;
+}
+
+body.door, body.door-page 
+{
+  background-color: #fff68f !important;
+}
+
+body.portfolio, body.portfolio-page 
+{
+  background-color: #fff68f !important;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retro Arcade - Home</title>
+  <link id="mainStyleSheet" rel="stylesheet" href="style.css">
+  <script src="functions.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1>Home Page</h1>
+  </header>
+
+  <main class="stage">
+    <img src="images/arcade.png" width="320" height="320" alt="Arcade"
+         usemap="#arcade-map" class="arcade-image">
+
+    <map name="arcade-map">
+      <!-- Billboard -->
+      <area shape="rect" coords="85,5,235,65" href="qualifications.html" alt="Billboard">
+      <!-- Window (acts like a button) -->
+      <area shape="rect" coords="60,140,150,230" href="#" alt="Arcade Window" onclick="toggleStyleSheet(); return false;">
+      <!-- portfolio -->
+      <area shape="rect" coords="185,160,225,260" href="portfolio.html" alt="Portfolio">
+      <!-- Car -->
+      <area shape="rect" coords="10,200,120,280" href="genai.html" alt="Gen AI">
+      <!-- Plants -->
+      <area shape="rect" coords="260,220,310,300" href="services.html" alt="Services">
+    </map>
+  </main>
+
+  <p style="text-align:center; margin: 2rem; color:#374151;">
+    What is more exciting than creating a computer program that stimulates thought, provides assistance, solves a problem or gives joy? Nothing! Programming brings ideas and imagination to life. Video games are a platform that challenge players to think critically and find creative solutions through an entertaining immersive world. For as long as I can remember, I have been intrigued not only with playing video games but learning how to create them. I wanted to understand the programming and components that go into creating games so that I could create my own games. My path has always been focused on pursuing a career in video game development.
+
+    My name is Michael Ramirez and I design and develop video games. My professional goal is to be a programmer in the video game industry, specializing in the technical and programming aspects of game development. Currently, I am a Texas A&M University Computer Science major in the College of Engineering with a minor in Game Design and Development in the College of Performance, Visualization, and Fine Arts. One area that I am interested in is the use of generative AI along with procedural tools to create interactive and responsive non-playable characters and to create immersive virtual worlds. By combining the latest technology with thoughtful design, I want to create games that are not only entertaining but educational and impactful.
+
+  </p>
+
+  <script src="functions.js"></script>
+</body>
+</html>

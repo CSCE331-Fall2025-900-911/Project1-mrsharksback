@@ -1,0 +1,198 @@
+body 
+{
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  color: #111827;
+  background: #f5f7fa;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.site-header 
+{ 
+  text-align: center; 
+  padding: 2rem 1rem 1rem; 
+}
+
+.site-header h1 
+{ 
+  margin: 0 0 .25rem; 
+  font-size: clamp(1.5rem, 2vw + 1rem, 2.25rem); 
+}
+
+.stage 
+{ 
+  display: grid; 
+  place-items: center; 
+  padding: 1rem; 
+}
+
+.arcade-image 
+{
+  display: block;
+  max-width: 100%;
+  height: auto;
+  image-rendering: pixelated;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.12);
+  border: 1px solid #e5e7eb;
+}
+
+/* Portfolio */
+
+.arcade-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  width: min(1200px, 95%);
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.arcade-machine {
+  position: relative;
+  width: 320px;  
+  height: 320px;
+  margin: 0 auto;
+  background: url("images/arcade machine.png") no-repeat center/contain;
+}
+
+.arcade-machine .title {
+  position: absolute;
+  top: 57px;    
+  left: 85px;
+  width: 100px;
+  text-align: center;
+}
+.arcade-machine .title h2 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 10px;
+  color: #ff0000;
+}
+
+.arcade-machine .screen {
+  position: absolute;
+  top: 100px;  
+  left: 120px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+.arcade-machine .screen img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.arcade-machine .side-text {
+  position: absolute;
+  top: 60px;
+  right: 85px;
+  width: 40px;
+  font-size: 8px;
+  line-height: 1.4;
+  color: #772828;
+}
+
+.arcade-machine .controls {
+  position: absolute;
+  bottom: 55px;
+  left: 65px;
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.arcade-machine .btn {
+  display: inline-block;
+  background: #ff004400;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background .2s ease;
+}
+.arcade-machine .btn:hover {
+  background: #0000004b;
+}
+
+/* Portfolio */
+
+.main-brown {
+  background-color: #8b5a2b; 
+  color: #000;
+  min-height: 100vh;
+  margin: 0;
+  padding: 2rem 1rem;
+}
+
+.employee-plaque {
+  background-color: #ffeb3b; 
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.employee-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 1rem auto;
+}
+
+.employee-name {
+  margin: 0.5rem 0;
+}
+
+.employee-info {
+  max-width: 400px;
+  margin: 0.5rem auto;
+  line-height: 1.4;
+}
+
+/* services */
+
+.bulletin-body {
+  background: #deb887;
+  margin: 0;
+  padding: 2rem 1rem;
+  font-family: Arial, sans-serif;
+}
+
+.bulletin-board {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.note {
+  background: #fff8dc; 
+  border: 1px solid #d2b48c;
+  border-radius: 6px;
+  padding: 1rem;
+  flex: 1 1 250px;
+}
+
+.note p {
+  margin: 0 0 0.5rem;
+}
+
+.note a {
+  color: #0000ee;
+  text-decoration: underline;
+  font-weight: bold;
+}
